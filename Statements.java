@@ -23,10 +23,18 @@ class Statements{
         System.out.println(result1 + " records affected");  
         
         // select statement
-        ResultSet rs = stmt.executeQuery("select * from emp");  
+        ResultSet rs = stmt.executeQuery("select * from emp");  // rs is cursor
         while(rs.next()) {
             System.out.println( rs.getInt(1) + "  "+rs.getString(2) + "  " + rs.getString(3));  
         }
+        /*
+           1. rs.previous ()        :moves back one row.
+           2. rs.absolute (int num) : moves to the row with the specified number.
+           3. rs.relative (int num) :moves forward or backward (if num is negative) relative to the current position.
+                                     Relative (-1) has the same effect as previous.
+           4. rs.first()            :moves to the first row, and last 0 moves to the last row.
+
+        */
         
         con.close();  
     }
