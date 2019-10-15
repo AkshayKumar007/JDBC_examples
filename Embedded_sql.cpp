@@ -1,5 +1,11 @@
-#include<bits/stdc++.h>
-// #include <sql.h> 
+#include <windows.h> 
+#include <sql.h> 
+#include <sqlext.h> 
+#include <stdio.h> 
+#include <conio.h> 
+#include <tchar.h> 
+#include <stdlib.h> 
+#include <sal.h> 
 using namespace std;
 int main() {  
    EXEC SQL INCLUDE SQLCA;  
