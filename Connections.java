@@ -2,12 +2,18 @@ import java.sql.*;
 class Connections{  
     public static void main(String args[]){  
         try{  
-        //step1 load the driver class  
+            //step1 load the driver class  
             Class.forName("oracle.jdbc.driver.OracleDriver");  
             
-            //step2 create  the connection object  
-            Connection con=DriverManager.getConnection(  
-            "jdbc:oracle:thin:@localhost:1521:xe","system","oracle");  
+            //step2 create  the connection object  (url, userId, password)
+            try {
+                Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","Naruto Kawasaki","AngelPriya"); 
+            }
+            catch(SQLException excpt) {
+                System.out.println(excpt.getMessageO);
+                return;
+            }
+             
             
             //step3 create the statement object  
             Statement stmt=con.createStatement();  
