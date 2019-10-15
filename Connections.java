@@ -7,7 +7,7 @@ class Connections{
             
             //step2 create  the connection object  (url, userId, password)
             try {
-                Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","Naruto Kawasaki","AngelPriya"); 
+                Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","Edward Snowden","AngelPriya"); 
             }
             catch(SQLException excpt) {
                 System.out.println(excpt.getMessageO);
