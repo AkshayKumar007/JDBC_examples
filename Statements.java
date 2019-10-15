@@ -3,7 +3,7 @@ class Statements{
     public static void main(String args[]) throws Exception{  
         // making connections
         Class.forName("oracle.jdbc.driver.OracleDriver");  
-        Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","Angel Priya","abcd#1234");  
+        Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","Edward Snowden","abcd#1234");  
         PreparedStatement stmt = con.prepareStatement();  
         
         //insert query
