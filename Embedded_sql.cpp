@@ -6,7 +6,7 @@
 #include <tchar.h> 
 #include <stdlib.h> 
 #include <sal.h> 
-using namespace std;
+
 int main() {  
    EXEC SQL INCLUDE SQLCA;  
    EXEC SQL BEGIN DECLARE SECTION;  
